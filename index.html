@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Video Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <a href="#Home">Home</a>
+        <a href="#Video">Video</a>
+        <a href="#Categories">Categories</a>
+        <a href="#Contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="title">Video Gallery</div>
+        <h2>Videos</h2>
+        <div class="video-container">
+            <a href="#" class="video-item" onclick="openVideo('videos/video1.mp4')">
+                <img class="thumbnail" src="images/parrot.png" alt="video1">
+                <h3>Parrot</h3>
+                <p></p>
+            </a>
+            <a href="#" class="video-item" onclick="openVideo('video2.mp4')">
+                <img class="thumbnail" src="images/buterfly.png" alt="video2">
+                <h3>butterfly</h3>
+                <p></p>
+            </a>
+            <a href="#" class="video-item" onclick="openVideo('video3.mp4')">
+                <img class="thumbnail" src="images/parrot.png" style="transform: scaleX(-1);">
+                <h3>notParrot</h3>
+                <p></p>
+            </a>
+        </div>
+    </div>
+
+    <div id="videoModal" class="modal">
+        <video id="videoPlayer" controls>
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
